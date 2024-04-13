@@ -1,5 +1,6 @@
 .content {
     padding: 20px;
+    padding-top: 100px;
     background-color: #aeb6bf;
 
     grid-area: content;

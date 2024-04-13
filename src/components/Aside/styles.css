@@ -6,6 +6,11 @@
     width: var(--w-aside);
     min-height: 100vh;
     left: 0;
+    top: 0;
+    bottom: 0;
+
+    overflow-y:auto;
+    overflow-x:hidden;
 
     grid-area: aside;
     z-index: 10;
