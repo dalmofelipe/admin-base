@@ -1,0 +1,19 @@
+.aside {
+    color: white;
+    background-color: #2e4053;
+
+    position: fixed;
+    width: var(--w-aside);
+    min-height: 100vh;
+    left: 0;
+
+    grid-area: aside;
+    z-index: 10;
+}
+
+
+@media (max-width: 1000px) {
+    .aside {
+        display: none;
+    }
+}

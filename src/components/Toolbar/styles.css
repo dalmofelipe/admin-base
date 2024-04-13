@@ -1,0 +1,16 @@
+.toolbar {
+    background-color: #dedede;
+
+    position: fixed;
+    right: 0;
+    width: calc(100% - 300px);
+    height: var(--h-toolbar);
+
+    grid-area: toolbar;
+}
+
+@media (max-width: 1000px) {
+    .toolbar {
+        width: 100%;        
+    }
+}
