@@ -10,7 +10,12 @@ function Aside() {
             <span style={{fontSize: "30px", fontWeight: 300}} >CONTENT</span>
 
             <section>
-            <article style={{margin: "20px 0"}}>
+            <article style={{
+                    margin: "20px 0", 
+                    backgroundColor: "#e2e6e8",
+                    padding: "20px",
+                    boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.1)"
+                }}>
                 <h3>Titulo</h3>
                 <p>Mussum Ipsum, cacilds vidis litro abertis.  Leite de capivaris, leite de mula manquis sem cabeça. Suco de cevadiss deixa as pessoas mais interessantis. Quem manda na minha terra sou euzis! Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.</p>
                 <p>Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Diuretics paradis num copo é motivis de denguis. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>

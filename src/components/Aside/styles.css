@@ -15,6 +15,8 @@
 
     grid-area: aside;
     z-index: 10;
+
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .logo {
     height: var(--h-toolbar);
@@ -59,7 +61,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     color: #bbb;
     background-color: rgba(255, 255, 255, 0.10);
 

@@ -66,9 +66,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 758,
-			"y": 285,
-			"lastActivityTimestamp": 1713030997554,
+			"x": 610.692,
+			"y": -10.799999999999983,
+			"lastActivityTimestamp": 1713132068896,
 			"meta": {}
 		},
 		{
@@ -79,9 +79,9 @@
 			"typeName": "page"
 		},
 		{
-			"x": 151,
-			"y": -9,
-			"z": 1,
+			"x": 103.00799999999991,
+			"y": 151.2,
+			"z": 0.7692307692307693,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -103,8 +103,9 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:fill": "semi",
-				"tldraw:geo": "rectangle"
+				"tldraw:fill": "solid",
+				"tldraw:geo": "rectangle",
+				"tldraw:color": "grey"
 			},
 			"brush": null,
 			"scribbles": [],
@@ -119,8 +120,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1263,
-				"h": 613
+				"w": 940,
+				"h": 884
 			},
 			"insets": [
 				false,
@@ -155,13 +156,12 @@
 			"isLocked": false,
 			"opacity": 1,
 			"meta": {},
-			"id": "shape:53g5A4ZocGtu7w_NTSzrJ",
 			"type": "geo",
 			"props": {
 				"w": 578,
 				"h": 390,
 				"geo": "rectangle",
-				"color": "black",
+				"color": "grey",
 				"labelColor": "black",
 				"fill": "semi",
 				"dash": "draw",
@@ -175,6 +175,7 @@
 			},
 			"parentId": "page:page",
 			"index": "a1",
+			"id": "shape:53g5A4ZocGtu7w_NTSzrJ",
 			"typeName": "shape"
 		},
 		{
@@ -184,13 +185,12 @@
 			"isLocked": false,
 			"opacity": 1,
 			"meta": {},
-			"id": "shape:7EIef9Ul6hnK9eEHHcmAS",
 			"type": "geo",
 			"props": {
 				"w": 150,
 				"h": 377,
 				"geo": "rectangle",
-				"color": "black",
+				"color": "grey",
 				"labelColor": "black",
 				"fill": "semi",
 				"dash": "draw",
@@ -204,51 +204,22 @@
 			},
 			"parentId": "page:page",
 			"index": "a2",
-			"typeName": "shape"
-		},
-		{
-			"x": 275,
-			"y": 106,
-			"rotation": 0,
-			"isLocked": false,
-			"opacity": 1,
-			"meta": {},
-			"id": "shape:12lDaVB5872k_OWBOgq0o",
-			"type": "geo",
-			"props": {
-				"w": 407,
-				"h": 61.6875,
-				"geo": "rectangle",
-				"color": "black",
-				"labelColor": "black",
-				"fill": "semi",
-				"dash": "draw",
-				"size": "m",
-				"font": "draw",
-				"text": "toolbar",
-				"align": "middle",
-				"verticalAlign": "middle",
-				"growY": 0,
-				"url": ""
-			},
-			"parentId": "page:page",
-			"index": "a3",
+			"id": "shape:7EIef9Ul6hnK9eEHHcmAS",
 			"typeName": "shape"
 		},
 		{
 			"x": 276,
-			"y": 147,
+			"y": 109.30000000000001,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
 			"meta": {},
-			"id": "shape:lT7J8a1VNARE_yTNlgR4x",
 			"type": "geo",
 			"props": {
 				"w": 405,
-				"h": 335,
+				"h": 372.7,
 				"geo": "rectangle",
-				"color": "black",
+				"color": "grey",
 				"labelColor": "black",
 				"fill": "semi",
 				"dash": "draw",
@@ -262,6 +233,7 @@
 			},
 			"parentId": "page:page",
 			"index": "a4",
+			"id": "shape:lT7J8a1VNARE_yTNlgR4x",
 			"typeName": "shape"
 		},
 		{
@@ -271,13 +243,12 @@
 			"isLocked": false,
 			"opacity": 1,
 			"meta": {},
-			"id": "shape:2PxrxPNMVXQivfo6DGvig",
 			"type": "geo",
 			"props": {
 				"w": 393,
 				"h": 94,
 				"geo": "rectangle",
-				"color": "black",
+				"color": "grey",
 				"labelColor": "black",
 				"fill": "semi",
 				"dash": "draw",
@@ -291,6 +262,36 @@
 			},
 			"parentId": "page:page",
 			"index": "a5",
+			"id": "shape:2PxrxPNMVXQivfo6DGvig",
+			"typeName": "shape"
+		},
+		{
+			"x": 281.20000000000005,
+			"y": 113.2125,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:kV0HF65jMNn2uAieBfCjP",
+			"type": "geo",
+			"props": {
+				"w": 395.29999999999995,
+				"h": 61.6875,
+				"geo": "rectangle",
+				"color": "grey",
+				"labelColor": "black",
+				"fill": "solid",
+				"dash": "draw",
+				"size": "m",
+				"font": "draw",
+				"text": "toolbar",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"growY": 0,
+				"url": ""
+			},
+			"parentId": "page:page",
+			"index": "a4V",
 			"typeName": "shape"
 		}
 	]
