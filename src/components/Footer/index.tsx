@@ -4,7 +4,7 @@ function Aside() {
     return (
         <footer className="footer">
             <section>
-                <h2 style={{fontWeight: 100}} >AdminBase</h2>
+                <h2 style={{fontWeight: 300}} >AdminBase</h2>
                 <small>Development v1.0.0</small>
                 <br />
                 <br />
@@ -13,10 +13,10 @@ function Aside() {
 
             <section>
                 <ul style={{listStyle: "none", textAlign: "right"}}>
-                    <li><h3 style={{fontWeight: 100}} >Compartilhe</h3></li>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Utilidade</a></li>
-                    <li><a href="/">Mapa da Mina</a></li>
+                    {/* <li><h3 style={{fontWeight: 400}} >Compartilhe</h3></li> */}
+                    <li><a href="/">link1</a></li>
+                    <li><a href="/">link2</a></li>
+                    <li><a href="/">link3</a></li>
                 </ul>
             </section>
         </footer>

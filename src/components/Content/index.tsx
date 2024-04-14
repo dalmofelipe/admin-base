@@ -7,7 +7,7 @@ function Aside() {
         <main className="content">
             <Toolbar />
             
-            <span style={{fontSize: "30px", fontWeight: 100}} >CONTENT</span>
+            <span style={{fontSize: "30px", fontWeight: 300}} >CONTENT</span>
 
             <section>
             <article style={{margin: "20px 0"}}>
