@@ -1,8 +1,37 @@
+import { useEffect, useMemo, useState } from "react";
+import IpApiService from "../../services/ip-api.service";
+import IpLocation from "../../types/ip-location.type";
 import Footer from "../Footer";
 import Toolbar from "../Toolbar";
-import "./styles.css"
+import "./styles.css";
+
 
 function Aside() {
+
+    const ipApiService = useMemo(() => new IpApiService(), []);
+
+    const [location, setLocation] = useState({} as IpLocation)
+    const [currentTime, setCurrentTime] = useState(new Date());
+
+    useEffect(() => {
+        async function getLocation() {
+            try {
+                setLocation(await ipApiService.getLocation())
+            } catch (error) {
+                console.error('Erro__getLocation:', error);
+            }
+        }
+        getLocation()
+
+        setInterval(() => {
+            setCurrentTime(new Date());
+        }, 1000);
+
+    }, [ipApiService, location])
+
+    const formattedTime = currentTime.toLocaleString("pt-BR");
+
+
     return (
         <main className="content">
             <Toolbar />
@@ -10,6 +39,18 @@ function Aside() {
             <span style={{fontSize: "30px", fontWeight: 300}} >CONTENT</span>
 
             <section>
+
+            <article style={{
+                    margin: "20px 0", 
+                    backgroundColor: "#e2e6e8",
+                    padding: "20px",
+                    boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.1)"
+                }}>
+                    <h3>{location.city} - {location.region} <small>[{location.lat}, {location.lon}]</small></h3>
+                    <small>{formattedTime}</small>
+            </article>
+
+
             <article style={{
                     margin: "20px 0", 
                     backgroundColor: "#e2e6e8",
