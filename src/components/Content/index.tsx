@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import IpApiService from "../../services/ip-api.service";
-import IpLocation from "../../types/ip-location.type";
+import IpLocation from "../../types/ip-api.types";
 import Footer from "../Footer";
 import Toolbar from "../Toolbar";
 import "./styles.css";
