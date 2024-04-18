@@ -7,6 +7,7 @@ class IpApiService {
             .then(response => response.json())
             .catch(error => console.error(error));
     }
+
 }
 
 

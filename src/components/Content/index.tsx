@@ -27,7 +27,7 @@ function Aside() {
             setCurrentTime(new Date());
         }, 1000);
 
-    }, [ipApiService, location])
+    }, [])
 
     const formattedTime = currentTime.toLocaleString("pt-BR");
 
@@ -41,7 +41,9 @@ function Aside() {
             <section>
 
             <article style={{
-                    margin: "20px 0", 
+                    maxWidth: "1600px",
+                    margin: "20px auto", 
+                    borderRadius: "5px",
                     backgroundColor: "#e2e6e8",
                     padding: "20px",
                     boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.1)"
@@ -52,7 +54,9 @@ function Aside() {
 
 
             <article style={{
+                    maxWidth: "1600px",
                     margin: "20px 0", 
+                    borderRadius: "5px",
                     backgroundColor: "#e2e6e8",
                     padding: "20px",
                     boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.1)"
