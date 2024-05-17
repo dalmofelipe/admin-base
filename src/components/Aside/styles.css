@@ -62,19 +62,45 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
-    color: #bbb;
-    background-color: rgba(255, 255, 255, 0.10);
-
+    
     display: block;
     border-radius: 5px;
     padding: 10px 20px;
 
     transition: background-color .2s ease;
 }
-.aside-link:hover {
+
+.abtn-default {
+    color: #ccc;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+.abtn-default:hover {
     color: #2e4053;
     background-color: rgba(255, 255, 255, 0.4);
 }
+
+.abtn-primary {
+    color: white;
+    background-color: blue;
+}
+
+.abtn-success {
+    color: white;
+    background-color: rgba(25, 151, 0, 0.925);
+}
+.abtn-success:hover {
+    background-color: rgba(25, 151, 0, 0.726);
+}
+
+.abtn-danger {
+    color: white;
+    background-color: rgb(212, 42, 0);
+}
+.abtn-danger:hover {
+    background-color: rgba(212, 42, 0, 0.815);
+}
+
+
 @media (max-width: 1000px) {
     .aside {
         display: none;
