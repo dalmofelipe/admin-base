@@ -1,6 +1,6 @@
 import { GiDeathStar } from "react-icons/gi";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./styles.css";
 
 
@@ -20,8 +20,9 @@ function Aside() {
 
                 <div className="amenu-top">
                     <ul className="aside-links">
-                        <li><Link className="aside-link abtn-default" to="/">Dashboard</Link></li>
-                        <li><Link className="aside-link abtn-default" to="/products">Produtos</Link></li>
+                        <li><NavLink to="/" className="aside-link abtn-default">Dashboard</NavLink></li>
+                        <li><NavLink className="aside-link abtn-default" to="/products">Produtos</NavLink></li>
+                        <li><NavLink className="aside-link abtn-default" to="/stock">Estoque</NavLink></li>
                     </ul>
                 </div>
 

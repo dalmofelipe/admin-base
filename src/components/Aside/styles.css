@@ -16,7 +16,7 @@
     grid-area: aside;
     z-index: 10;
 
-    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .logo {
     height: var(--h-toolbar);
@@ -75,8 +75,12 @@
     background-color: rgba(255, 255, 255, 0.10);
 }
 .abtn-default:hover {
-    color: #2e4053;
-    background-color: rgba(255, 255, 255, 0.4);
+    color: #fafafa;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.active {
+    color: #fafafa;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .abtn-primary {

@@ -4,11 +4,11 @@ import { Outlet } from "react-router-dom";
 
 import './styles.css';
 
-function LayoutDefault() {
+function AdminLayout() {
   return (
     <div className="App">
       <Aside />
-      
+
       <Toolbar />
 
       <Outlet />
@@ -16,4 +16,4 @@ function LayoutDefault() {
   );
 }
 
-export default LayoutDefault;
+export default AdminLayout;
