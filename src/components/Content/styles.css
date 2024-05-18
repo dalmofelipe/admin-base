@@ -1,15 +1,15 @@
 .content {
     padding: 30px;
     padding-top: 100px;
-    background-color: #aeb6bf;
+    background-color: #bac3c3; /* #aeb6bf */
 
     grid-area: content;
 }
 
-.content header {
+.content > header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin: 20px 0px 40px 0px;
 }

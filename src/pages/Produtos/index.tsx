@@ -1,14 +1,15 @@
-import Content from "../../components/Content"
 import { VscArchive } from "react-icons/vsc";
+import Content from "../../components/Content";
+import ListaProdutoCard from "../../components/ListaProdutoCard";
+import NovoProdutoCard from "../../components/NovoProdutoCard";
 
-import "./styles.css"
+import "./styles.css";
 
 function Produtos() {
     return (
         <Content icon={<VscArchive />} title="Produtos">
-            <div className="produtos">
-                PRODUTOS
-            </div>
+            <NovoProdutoCard />
+            <ListaProdutoCard />
         </Content>
     )
 }
