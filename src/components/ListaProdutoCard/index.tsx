@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import ProductService from '../../services/products.service';
-import Product from "../../types/product.types";
+import { Product } from "../../types/product.types";
 import Card from "../Card";
 import "./styles.css";
 

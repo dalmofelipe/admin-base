@@ -90,18 +90,18 @@
 
 .abtn-success {
     color: white;
-    background-color: rgba(25, 151, 0, 0.925);
+    background-color: cadetblue;
 }
 .abtn-success:hover {
-    background-color: rgba(25, 151, 0, 0.726);
+    background-color: rgb(38, 88, 90);
 }
 
 .abtn-danger {
     color: white;
-    background-color: rgb(212, 42, 0);
+    background-color: indianred;
 }
 .abtn-danger:hover {
-    background-color: rgba(212, 42, 0, 0.815);
+    background-color: rgb(146, 41, 41);
 }
 
 

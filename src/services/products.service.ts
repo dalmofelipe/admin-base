@@ -7,9 +7,6 @@ class ProductService {
     }
 
     async getProducts() {
-
-        console.log(this.BASE_URL)
-
         return await fetch(this.BASE_URL + "/products")
             .then(response => response.json())
             .catch(error => console.error(error));
