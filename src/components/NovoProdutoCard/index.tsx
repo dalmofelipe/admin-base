@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm, Controller } from "react-hook-form";
 
+import ProductService from '../../services/products.service'
 import { getAllCategories } from "../../services/category.service";
 import { Category, Product } from "../../types/product.types";
 import Card from "../Card";
@@ -12,11 +13,19 @@ function NovoProdutoCard() {
         register,
         handleSubmit,
         control,
+        reset,
         // watch,
         formState: { errors },
     } = useForm<Product>()
 
-    const onSubmit: SubmitHandler<Product> = (data) => console.log(data)
+    const onSubmit: SubmitHandler<Product> = async (data) => {
+        console.log(data)
+
+        let productService = new ProductService()
+
+        await productService.saveProduct(data)
+        reset()
+    }
 
     const [ categories, setCategory ] = useState([ {} as Category ])
     
@@ -78,16 +87,15 @@ function NovoProdutoCard() {
                         <label htmlFor="category.name">Categoria</label>
 
                         <Controller
-                            name="category.name"
+                            name="category.id"
                             control={control}
-                            defaultValue=""
                             rules={{ required: 'Este campo é obrigatório' }}
                             render={({ field }) => (
                             <select id="category.name" {...field}>
                                 <option value="">Selecione uma categoria</option>
                                 {categories && categories.map((c) => {
                                     return (
-                                        <option value={c.name} key={c.id}>{c.name}</option>
+                                        <option value={c.id} key={c.id}>{c.name}</option>
                                     )
                                 })}
                             </select>
